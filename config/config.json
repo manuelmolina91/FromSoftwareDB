@@ -1,0 +1,9 @@
+{
+    "development": {
+      "username": "backendfromsoftware",
+      "password": "backendfromsoftware",
+      "database": "backendfromsoftware",
+      "host": "127.0.0.1",
+      "dialect": "postgres"
+    }
+  }

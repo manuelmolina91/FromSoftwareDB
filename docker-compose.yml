@@ -1,0 +1,15 @@
+version: '3.7'
+services:
+  db:
+    container_name: 'FromSoftwareDB'
+    image: postgres:13-alpine
+    environment:
+      POSTGRES_USER: backendfromsoftware
+      POSTGRES_DB: backendfromsoftware
+      POSTGRES_PASSWORD: backendfromsoftware
+    ports:
+      - 5432:5432
+    volumes:
+      - db-data:/var/lib/postgresql/data
+volumes:
+  db-data:
