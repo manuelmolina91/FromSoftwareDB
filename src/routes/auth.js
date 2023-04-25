@@ -1,4 +1,4 @@
-
+const { signup, login } = require('../controllers/auth')
 const router = require('express').Router()
 
 /**
