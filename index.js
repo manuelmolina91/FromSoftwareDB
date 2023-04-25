@@ -1,5 +1,6 @@
 const express = require('express')
 const bodyParser = require('body-parser')
+const authRoutes = require('./src/routes/auth')
 const { ensureAuthentication } = require('./src/middleware/auth')
 const dotenv = require('dotenv')
 const cors = require('cors')
@@ -17,6 +18,7 @@ const startApp = async () => {
         })
     )
     app.use(ensureAuthentication)
+    app.use('/auth', authRoutes)
 
     try {
         app.listen(port, () => {

@@ -19,6 +19,7 @@ router.post('/signup', async (request, response) => {
         response.status(200).json(token)
     }   catch (error) {
         response.status(500).json('Error at the route of sign up: ' + error.message)
+        console.log("entramos aqui")
     }
 })
 
